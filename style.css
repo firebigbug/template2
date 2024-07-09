@@ -24,7 +24,7 @@
 .razorbackcomp {
     position: absolute;
     top: 80px; /* Place the top of the image 50% down from the top of the viewport */
-    left: 750px; /* Place the left edge of the image 50% across the viewport */
+    left: 50%; /* Place the left edge of the image 50% across the viewport */
     transform: translate(-50%, -50%); /* Translate the image back by half of its own width and height */
     max-width: 100%; /* Ensure the image does not exceed the viewport width */
     max-height: 100%; /* Ensure the image does not exceed the viewport height */
