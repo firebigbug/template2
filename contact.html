@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razorback Computers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topborder"></div>
+        <div class="header">
+            <ul>
+                <li class="logo"><a href="index.html"><img src="logo2.png" alt="Logo"></a></li>
+                <li class="razorbackcomp"><img src ="razorbackcomputers.png" alt="Razorback Computers"></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="button"><a href="index.html">About</a></li>
+                <li class="button"><a href="services.html">Services</a></li>
+                <li class="button"><a href="products.html">Products</a></li>
+                <li class="button"><a href="location.html">Location</a></li>
+                <li class="button"><a href="FAQ.html">FAQ</li>
+                <li><a href="contact.html" class="contact-btn">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="send_email.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 1998 Razorback Computers </p>
+    </footer>
+</body>
+</html>

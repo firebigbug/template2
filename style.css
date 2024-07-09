@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background: #555555;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.logo{
+    z-index: 9999;
+    
+}
+.logo img {
+    width: 150px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.razorbackcomp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Ensure container covers full viewport height */
+}
+.razorbackcomp img {
+     /* Translate the image back by half of its own width and height */
+    max-width: 90%; /* Ensure the image does not exceed the viewport width */
+    max-height: 90%; /* Ensure the image does not exceed the viewport height */
+    cursor: default;
+}
+.rzcomp1 {
+    position: absolute; /* Use fixed position to center relative to the viewport */
+    top: 100%; /* Place the top of the image 50% down from the top of the viewport */
+    left: 57%; /* Place the left edge of the image 50% across the viewport */
+    transform: translate(-50%, -50%); /* Translate the image back by half of its own width and height */
+    max-width: 55%; /* Ensure the image does not exceed the viewport width */
+    max-height: 55%; /* Ensure the image does not exceed the viewport height */
+    cursor: default;
+    
+}
+.titlecomp img {
+    position: absolute;
+    top: 50px;
+    left: 750px;
+    width: 400px;
+    margin: 0px;
+    padding: 0px;
+    cursor: default;
+}
+
+.header ul {
+    display: inline-flex; /* Display menu items in a single line */
+    list-style: none;
+    margin-top: 10px;
+    
+}
+.header ul li {
+    margin: 0 70px;
+    color: #b2b1b1;
+    cursor: pointer;
+}
+.menu {
+    float: left;
+    background-color: #555555; /* Green background */
+  border: 0px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 30px 70px; /* Some padding */
+  cursor: default; /* Pointer/hand icon */
+  width: 10%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+
+.menuclass {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu ul li {
+    margin-bottom: 30px; /* Adjust spacing between menu items */
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center; /* Center align text within each menu item */
+}
+
+.menu ul li:last-child {
+    margin-bottom: 0; /* Remove margin bottom from the last menu item */
+}
+
+.topborder {
+    position: absolute;
+    top: 1000;
+    left: 0;
+    width: 100%; /* Cover half of the width */
+    height: 50%; /* Cover full height */
+    background: #555555; /* White background color */
+    z-index: -1; /* Ensure it's behind other content */
+}
+
+
+.contact-btn {
+    position: absolute;
+    top: 70px;
+    right: 80px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+.websitetitle {
+    position: absolute;
+    top: 50px;
+    left: 700px;
+    text-decoration: none;
+    color: #3411d2 !important;
+    font-size: 30px;
+    
+}
+.button {
+    background-color: #fe0000; /* Green */
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  /* Styling links inside .button class */
+.button a {
+    background-color: #fe0000;
+    color: #ffffff; /* Set link color to white */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Change link color on hover */
+.button a:hover {
+    background-color: #fe0000;
+    color: #cccccc; /* Light gray color on hover */
+}
+.button span {
+    display: block;
+    padding: 0px; /* Adjust padding as needed */
+}
+.abouttext {
+    text-align: center;
+    color: #ffffff;
+    padding-left: 20px; /* Add spacing between menu and text */
+}
+
+.abouttext h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.abouttext p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.contact-form {
+    background-color: #555555;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label,
+.contact-form textarea,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form button {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #fe0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #9d4141;
+}
+.location {
+    font-family: Arial, sans-serif; /* Specify the font family */
+    font-size: 30px; /* Set the font size */
+    font-weight: 400; /* Set the font weight (e.g., 400 for normal, 700 for bold) */
+    color: #ffffff; /* Set the text color */
+    line-height: 1.5; /* Set the line height (1.5 times the font size) */
+    text-align: center; /* Align text to the left; can be center, right, justify, etc. */
+    /* Additional styling */
+    margin-top: 50px; /* Example: Add space above the text */
+    /* Add more properties as needed */
+    width: 100%;
+}
+.location img {
+    position: absolute;
+    top: 350px;
+    left: 400px;
+    width: 700px;
+    margin: 0px;
+    padding: 0px;
+    cursor: default;
+}
+.location p{
+    padding-bottom: 10px;
+}
