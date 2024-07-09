@@ -29,7 +29,7 @@
 }
 .razorbackcomp img {
      /* Translate the image back by half of its own width and height */
-    max-width: 90%; /* Ensure the image does not exceed the viewport width */
+    max-width: calc(100% - 20px); /* Ensure the image does not exceed the viewport width */
     max-height: 90%; /* Ensure the image does not exceed the viewport height */
     cursor: default;
 }
