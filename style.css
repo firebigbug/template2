@@ -39,23 +39,15 @@
 }
 .rzcomp1 {
     position: absolute; /* Use fixed position to center relative to the viewport */
-    top: 100%; /* Place the top of the image 50% down from the top of the viewport */
-    left: 57%; /* Place the left edge of the image 50% across the viewport */
+    top: 700px; /* Place the top of the image 50% down from the top of the viewport */
+    left: 53%; /* Place the left edge of the image 50% across the viewport */
     transform: translate(-50%, -50%); /* Translate the image back by half of its own width and height */
     max-width: 55%; /* Ensure the image does not exceed the viewport width */
     max-height: 55%; /* Ensure the image does not exceed the viewport height */
     cursor: default;
     
 }
-.titlecomp img {
-    position: absolute;
-    top: 50px;
-    left: 750px;
-    width: 400px;
-    margin: 0px;
-    padding: 0px;
-    cursor: default;
-}
+
 
 .header ul {
     display: inline-flex; /* Display menu items in a single line */
@@ -152,20 +144,39 @@
     padding: 0px; /* Adjust padding as needed */
 }
 .abouttext {
-    text-align: center;
-    color: #ffffff;
-    padding-left: 20px; /* Add spacing between menu and text */
+    display: flex; 
+    flex-wrap: wrap;
+    max-width: 1000px;
+    font-family: sans-serif;
+    justify-content: center;
 }
 
-.abouttext h2 {
-    text-align: center;
+.tabs__label {
+    padding: 10px 16px;
+    cursor: pointer;
     font-size: 24px;
-    margin-bottom: 10px;
+    color: #ffffff;
 }
-
-.abouttext p {
-    line-height: 1.6;
-    margin-bottom: 15px;
+.tabs__radio {
+    display: none;
+}
+.tabs__content {
+    order: 1; /* Order meaninng content of tabs will be grouped together */
+    width: 100%;
+    border-bottom: 3px solid #555555;
+    line-height: 2;
+    font-size: 22px;
+    color: #ffffff;
+    display: none;
+    text-align: center;
+}
+.tabs__radio:checked+.tabs__label {
+    font-weight: bold;
+    color: #fe0000;
+    border-bottom: 2px solid #fe0000;
+}
+.tabs__radio:checked+.tabs__label+.tabs__content {
+    display: initial;
 }
 .contact-form {
     background-color: #555555;
