@@ -231,27 +231,22 @@
 .contact-form button:hover {
     background-color: #9d4141;
 }
-.location {
-    font-family: Arial, sans-serif; /* Specify the font family */
-    font-size: 30px; /* Set the font size */
-    font-weight: 400; /* Set the font weight (e.g., 400 for normal, 700 for bold) */
-    color: #ffffff; /* Set the text color */
-    line-height: 1.5; /* Set the line height (1.5 times the font size) */
-    text-align: center; /* Align text to the left; can be center, right, justify, etc. */
-    /* Additional styling */
-    margin-top: 50px; /* Example: Add space above the text */
-    /* Add more properties as needed */
-    width: 100%;
+
+.locationtext {
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start;
+    line-height: 4; /* Align items at the start (top) of the container */
 }
-.location img {
-    position: absolute;
-    top: 350px;
-    left: 400px;
-    width: 700px;
-    margin: 0px;
-    padding: 0px;
-    cursor: default;
+.locationtext-text {
+    flex: 1; /* Take remaining space */
+    margin-right: 20px; /* Adjust margin between text and iframe */
+    font-family: sans-serif;
+    color: #ffffff;
 }
-.location p{
-    padding-bottom: 10px;
+.locationtext-hours {
+    line-height: 1.5;
+}
+.iframe-section {
+    flex: 1;
+    margin-right: 100px; /* Take remaining space */
 }
