@@ -39,7 +39,7 @@
 }
 .rzcomp1 {
     position: absolute; /* Use fixed position to center relative to the viewport */
-    top: 300px; /* Place the top of the image 50% down from the top of the viewport */
+    top: 400px; /* Place the top of the image 50% down from the top of the viewport */
     left: 53%; /* Place the left edge of the image 50% across the viewport */
     transform: translate(-50%, -50%); /* Translate the image back by half of its own width and height */
     max-width: 55%; /* Ensure the image does not exceed the viewport width */
