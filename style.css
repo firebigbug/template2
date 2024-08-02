@@ -47,7 +47,17 @@
     cursor: default;
     
 }
-
+.phototemplate1 {
+    position: absolute; /* Use fixed position to center relative to the viewport */
+    top: 250px; /* Place the top of the image 50% down from the top of the viewport */
+    left: 33%; /* Place the left edge of the image 50% across the viewport */
+    transform: translate(-50%, -50%); /* Translate the image back by half of its own width and height */
+    max-width: 55%; /* Ensure the image does not exceed the viewport width */
+    max-height: 55%; /* Ensure the image does not exceed the viewport height */
+    cursor: default;
+    width: 300px;
+    
+}
 
 .header ul {
     display: inline-flex; /* Display menu items in a single line */
