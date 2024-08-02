@@ -58,7 +58,69 @@
     width: 300px;
     
 }
+.template1container {
+    position: absolute;
+    font-family: Arial, sans-serif; /* Change the font */
+    font-size: 16px; /* Set the font size */
+    color: #ffffff; /* Change the text color */
+    line-height: 3; /* Adjust the line height */
+    text-align: left; /* Align the text to the left */
+    margin: 20px; /* Add some margin around the container */
+    padding: 15px; /* Add padding inside the container */
+    left: 50%;
+    top: 125px;
+    
+}
 
+.phototemplate2 {
+    position: absolute; /* Use fixed position to center relative to the viewport */
+    top: 500px; /* Place the top of the image 50% down from the top of the viewport */
+    left: 33%; /* Place the left edge of the image 50% across the viewport */
+    transform: translate(-50%, -50%); /* Translate the image back by half of its own width and height */
+    max-width: 55%; /* Ensure the image does not exceed the viewport width */
+    max-height: 55%; /* Ensure the image does not exceed the viewport height */
+    cursor: default;
+    width: 300px;
+    
+}
+.template2container {
+    position: absolute;
+    font-family: Arial, sans-serif; /* Change the font */
+    font-size: 16px; /* Set the font size */
+    color: #ffffff; /* Change the text color */
+    line-height: 3; /* Adjust the line height */
+    text-align: left; /* Align the text to the left */
+    margin: 20px; /* Add some margin around the container */
+    padding: 15px; /* Add padding inside the container */
+    left: 50%;
+    top: 350px;
+    
+}
+
+.phototemplate3 {
+    position: absolute; /* Use fixed position to center relative to the viewport */
+    top: 750px; /* Place the top of the image 50% down from the top of the viewport */
+    left: 33%; /* Place the left edge of the image 50% across the viewport */
+    transform: translate(-50%, -50%); /* Translate the image back by half of its own width and height */
+    max-width: 55%; /* Ensure the image does not exceed the viewport width */
+    max-height: 55%; /* Ensure the image does not exceed the viewport height */
+    cursor: default;
+    width: 300px;
+    
+}
+.template3container {
+    position: absolute;
+    font-family: Arial, sans-serif; /* Change the font */
+    font-size: 16px; /* Set the font size */
+    color: #ffffff; /* Change the text color */
+    line-height: 3; /* Adjust the line height */
+    text-align: left; /* Align the text to the left */
+    margin: 20px; /* Add some margin around the container */
+    padding: 15px; /* Add padding inside the container */
+    left: 50%;
+    top: 625px;
+
+}
 .header ul {
     display: inline-flex; /* Display menu items in a single line */
     list-style: none;
@@ -259,4 +321,57 @@
 .iframe-section {
     flex: 1;
     margin-right: 100px; /* Take remaining space */
+}
+
+.faq-section {
+    padding: 4em 2em;
+}
+.faq {
+    list-style: none;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq li {
+    background: #f2f2f2;
+    border-bottom: 1px #ccc solid;
+}
+.fa2 li:first-child {
+    border-top: 1px #ccc solid;
+}
+.q {
+    padding: 1em 0;
+    cursor: pointer;
+    color: #ffffff;
+}
+.q:hover,
+.q:hover .arrow {
+    border-left-color: #fe0000;
+}
+.arrow {
+    display: inline-block;
+    margin: 0 0.5em;
+    width: 0;
+    height: 0;
+    border-top: 6px solid #fe0000;
+    border-left: 10px solid #555;
+    border-bottom: 6px solid transparent;
+    transition: 0.3s;
+}
+.faq p {
+    color: #ffffff;
+    line-height: 25px;
+}
+
+.a {
+    overflow: hidden;
+    height: 0;
+    padding: 0 1em 0 3.3em;
+}
+.a-opened {
+    padding: 1em 1em 2em 3.3em;
+    height: initial;
+}
+.arrow-rotated {
+    transform: rotate(0deg);
 }
